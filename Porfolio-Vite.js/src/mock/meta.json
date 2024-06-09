@@ -1,0 +1,19 @@
+{
+  "description": "MOCK",
+  "title": "MOCK",
+  "authors": [
+    {
+      "name": "MOCK"
+    }
+  ],
+  "keywords": ["-----", "----"],
+  "alternates": {
+    "canonical": "/",
+    "languages": {
+      "en-US": "/en-US"
+    }
+  },
+  "openGraph": {
+    "images": "url/image.png"
+  }
+}

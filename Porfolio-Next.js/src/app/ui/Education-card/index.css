@@ -1,0 +1,44 @@
+.education-card{
+    padding: 1.5rem;
+    /* grid-row: 4; */
+    /* animation-name: leftCard; */
+    animation-iteration-count: 1;
+    animation-duration: 80ms;
+    animation-direction: reverse;
+}
+
+.education-card__title{
+    font-size: larger;
+    color: var(--text-primary-color);
+    margin-bottom: 30px;
+}
+
+.education-card__body{
+    border-left: 2px solid;
+    border-color: rgba(179, 163, 249,1);
+    /*margin: 30px 0;*/
+    height: max-content;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-primary-color);
+    padding: 20px;
+}
+.education-card__body div{
+    background-color:rgba(179, 163, 249,1);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -6px;
+    top: 40px;
+
+}
+@media (max-width:1130px) {
+      
+
+    /* .education-card{
+        grid-column: 1 !important;
+        grid-row: 4 !important;
+    
+    } */
+}

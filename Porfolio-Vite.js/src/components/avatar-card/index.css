@@ -1,0 +1,114 @@
+.avatar-card {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  animation-iteration-count: 1;
+  animation-duration: 100ms;
+  animation-direction: reverse;
+}
+
+.avatar-card__background-image {
+  position: absolute;
+  width: 100%;
+  height: 21%;
+  z-index: 1;
+  overflow: hidden;
+}
+.avatar-card__background-image img {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-card__img {
+  box-shadow: 0px 7px 28px -14.9px var(--light-blue);
+  margin: 35px 25px 20px;
+  max-width: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--card-color);
+  z-index: 2;
+  height: 92px;
+  width: 92px;
+}
+
+.avatar-card__name {
+  font-size: large;
+  margin-bottom: 30px;
+  color: var(--text-primary-color);
+  letter-spacing: 1px;
+}
+
+.avatar-card__info {
+  font-weight: 600;
+  margin: 0 30px;
+  margin-bottom: 50px;
+  color: var(--text-secondary-color);
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.btn-blue {
+  margin-bottom: 30px;
+}
+.btn-blue:active {
+  background-color: rgba(145, 145, 255, 0.648);
+  transition: background-color 12s cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
+}
+
+.avatar-card__background-image svg {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 20px;
+  left: 20px;
+  background-color: var(--card-color);
+  border-radius: 50%;
+  padding: 5px;
+  fill: var(--text-primary-color);
+  color: var(--text-primary-color);
+  cursor: pointer;
+  box-shadow: 0 0 3px 0.1px var(--light-blue);
+}
+
+.avatar-card__background-image svg:active {
+  transform: rotate(30deg);
+  transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-resume {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 7px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: var(--text-primary-color);
+}
+
+.btn-resume span:first-child {
+  font-size: 1.3em;
+  position: relative;
+  color: var(--text-primary-color);
+}
+
+@media (max-width: 1130px) {
+  .avatar-card__img {
+    align-self: flex-start;
+  }
+
+  .avatar-card__background-image svg {
+    right: 20px;
+    left: auto;
+  }
+
+  .avatar-card__name {
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+}

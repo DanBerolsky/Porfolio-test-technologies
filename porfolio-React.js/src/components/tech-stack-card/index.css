@@ -1,0 +1,30 @@
+.tech-card{
+    /* grid-row: 3; */
+    padding: 1.5rem;
+    position: relative;
+    /* animation-name: leftCard; */
+    animation-iteration-count: 1;
+    animation-duration: 80ms;
+    animation-direction: reverse;
+}
+
+.tech-card__title{
+    font-size: larger;
+    color: var(--text-primary-color);
+}
+
+.tech-card__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 0;
+    justify-content: center;
+}
+.tech-card__items div{
+    background-color: rgba(154, 154, 255, 0.354);
+    border-radius: 10px;
+    color: var(--text-primary-color);
+    padding: 2px 13px;
+    font-weight: 600;
+    /* border: 1px solid rgba(76, 38, 246, 0.387); */
+}
